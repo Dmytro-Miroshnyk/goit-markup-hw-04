@@ -426,13 +426,13 @@ span.secondary {
 .foot-list li {
   margin-top: 9px;
 }
-.icon {
-  display: block;
+.icons {
+  /*display: block;
   content: " ";
   background-color: var(--secondary-background-color);
   height: 120px;
   margin-bottom: 30px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center;*/
 }
