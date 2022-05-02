@@ -10,6 +10,7 @@
   --secondary-background-color: #f5f4fa;
   --hero-background-color: #2f303a;
   --accent-color: #2196f3;
+  --icons-color: #afb1b8;
 }
 *,
 *::before,
@@ -90,6 +91,7 @@ body {
   line-height: 1.1;
   padding: 0px;
   margin-left: 93px;
+  align-items: bottom;
 }
 .site-nav .link:hover,
 .site-nav .link:focus,
@@ -104,7 +106,7 @@ body {
 }
 
 .site-nav .item + .item {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 .site-nav .link {
   display: block;
@@ -136,7 +138,7 @@ header .list {
   margin-left: 93px;
 }
 .main-nav .site-nav:last-child {
-  margin-left: 331px;
+  margin-left: 305px;
 }
 .site-nav .site-contacts {
   display: block;
@@ -196,6 +198,22 @@ header .list {
   padding: 6px 22px;
   text-align: center;
   border: solid transparent;
+}
+.filter-button:hover,
+.filter-button:focus {
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
+
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+.works:hover,
+.works:focus {
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 .hero .button:hover,
 .hero .button:focus {
@@ -265,7 +283,7 @@ header .list {
 }
 .team-cont {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
 }
 .team-name {
   display: block;
@@ -405,7 +423,7 @@ span.secondary {
 .list-team .teammate + .teammate {
   margin-left: 30px;
 }
-.list-team li {
+.list-team .teammate {
   background-color: var(--main-background-color);
   width: 270px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -426,15 +444,122 @@ span.secondary {
 .foot-list li {
   margin-top: 9px;
 }
-.icons {
-  width: 270px;
-  display: block;
-  content: " ";
+.advantage-icon {
+  display: flex;
   background-color: var(--secondary-background-color);
+  width: 270px;
   height: 120px;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  object-position: 50% 50%;
+}
+.team-icons {
+  display: flex;
+  width: 206px;
+  height: 44px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.team-icon {
+  display: flex;
+  height: 44px;
+  width: 44px;
+  list-style-type: none;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  fill: var(--icons-color);
+}
+.team-icon:hover,
+.team-icon:focus {
+  background-color: var(--accent-color);
+  fill: var(--main-background-color);
+  cursor: pointer;
+}
+.team-icon svg:hover,
+.team-icon svg:focus {
+  color: var(--main-background-color);
+  cursor: pointer;
+}
+.customer-icons {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  justify-content: space-between;
+}
+.customer-icon {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  list-style-type: none;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  fill: var(--icons-color);
+  border: 1px solid var(--icons-color);
+  border-radius: 4px;
+}
+.customer-icon:focus,
+.customer-icon:hover {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  cursor: pointer;
+}
+.section-customer .section-title {
+  margin-bottom: 50px;
+}
+.invite {
+  color: var(--main-background-color);
+  font-weight: 700;
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: 20px;
+}
+.footer-icons {
+  display: flex;
+  width: 206px;
+  height: 44px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-icon {
+  display: flex;
+  height: 44px;
+  width: 44px;
+  list-style-type: none;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  fill: var(--main-background-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.foot-section {
+  display: inline-flex;
+}
+.foot-section div:last-child {
+  margin-left: 70px;
+  padding-top: 12px;
+}
+.footer-icon:hover,
+.footer-icon:focus {
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+.mail-icon {
+  fill: currentColor;
+}
+.mail-icon:hover,
+.mail-icon:focus {
+  fill: var(--accent-color);
 }

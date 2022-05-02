@@ -27,24 +27,29 @@
 
             <ul class="site-nav list">
               <li class="item">
-                <a class="link" href="./index.html">Студия</a>
+                <a class="link link-current" href="./index.html">Студия</a>
               </li>
               <li class="item">
-                <a class="link link-current" href="./portfolio.html"
-                  >Портфолио</a
-                >
+                <a class="link" href="./portfolio.html">Портфолио</a>
               </li>
               <li class="item"><a class="link" href="">Контакты</a></li>
             </ul>
             <ul class="site-nav list contacts">
               <li class="item">
-                <a class="site-contacts" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+
+                <a href="mailto:info@devstudio.com" class="site-contacts">
+                  <svg class="mail-icon" width="16px" height="12px">
+                    <use href="./images/icons.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com
+                  </a>
               </li>
               <li class="item">
-                <a class="site-contacts" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
+                <a class="site-contacts" href="tel:+380961111111">
+                  <svg class="mail-icon" width="10px" height="16px">
+                    <use href="./images/icons.svg#icon-phone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
                 >
               </li>
             </ul>
@@ -58,11 +63,11 @@
         <div class="container cont-filter">
           <h1 class="visually-hidden">Портфолио</h1>
           <ul class="filter list">
-            <li><button type="button" class="button">Все</button></li>
-            <li><button type="button" class="button">Веб-сайты</button></li>
-            <li><button type="button" class="button">Приложения</button></li>
-            <li><button type="button" class="button">Дизайн</button></li>
-            <li><button type="button" class="button">Маркетинг</button></li>
+            <li><button type="button" class="button filter-button">Все</button></li>
+            <li><button type="button" class="button filter-button">Веб-сайты</button></li>
+            <li><button type="button" class="button filter-button">Приложения</button></li>
+            <li><button type="button" class="button filter-button">Дизайн</button></li>
+            <li><button type="button" class="button filter-button">Маркетинг</button></li>
           </ul>
           <ul class="card-set list">
             <li class="works">
@@ -143,8 +148,9 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <section>
-          <a class="logo" href="./index.html"
+        <section class="foot-section">
+          <div>
+            <a class="logo" href="./index.html"
             >Web<span class="secondary">Studio</span></a
           >
           <address class="address">
@@ -170,6 +176,36 @@
               </li>
             </ul>
           </address>
+          </div>
+          <div>
+           <h3 class="invite">присоединяйтесь</h3> 
+           <ul class="footer-icons">
+            <li class="footer-icon">
+              <svg  width ="20" height="20">
+                <use href="./images/icons.svg#icon-instagram-2">
+                </use>
+              </svg>
+            </li>
+            <li class="footer-icon">
+              <svg  width ="20" height="20">
+                <use href="./images/icons.svg#icon-twitter-1">
+                </use>
+              </svg>
+            </li>
+            <li class="footer-icon">
+              <svg  width ="20" height="20">
+              <use href="./images/icons.svg#icon-facebook-1">
+              </use>
+              </svg>
+            </li>
+            <li class="footer-icon">
+              <svg  width ="20" height="20">
+              <use href="./images/icons.svg#icon-linkedin-1">
+              </use>
+              </svg>
+            </li>
+          </ul>
+          </div>
         </section>
       </div>
     </footer>
