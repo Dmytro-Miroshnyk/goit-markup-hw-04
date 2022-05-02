@@ -436,4 +436,5 @@ span.secondary {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  object-position: center;
 }
