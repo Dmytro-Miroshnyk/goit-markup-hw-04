@@ -427,12 +427,13 @@ span.secondary {
   margin-top: 9px;
 }
 .icons {
-  /*display: block;
+  width: 270px;
+  display: block;
   content: " ";
   background-color: var(--secondary-background-color);
   height: 120px;
   margin-bottom: 30px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;*/
+  background-position: center;
 }
