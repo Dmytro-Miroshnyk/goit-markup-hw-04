@@ -141,7 +141,7 @@ header .list {
   margin-left: 305px;
 }
 .site-nav .site-contacts {
-  display: block;
+  display: flex;
   font-weight: 500;
   color: var(--secondary-text-color);
   text-decoration: none;
@@ -149,6 +149,10 @@ header .list {
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
+  align-items: center;
+}
+.site-contacts div {
+  padding-left: 10px;
 }
 .hero {
   display: block;
