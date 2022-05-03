@@ -106,6 +106,9 @@ body {
 }
 
 .site-nav .item + .item {
+  margin-left: 50px;
+}
+.site-nav .item-cont + .item-cont {
   margin-left: 30px;
 }
 .site-nav .link {
@@ -212,12 +215,14 @@ header .list {
   box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 .works:hover,
-.works:focus {
-  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+.works:focus,
+.works:active {
+  border: 1px solid rgba(238, 238, 238, 1);
+  box-shadow: 1px 4px 6px 0px #00000029;
 
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 4px 4px 0px #0000000f;
 
-  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 1px 1px 0px #0000001f;
 }
 .hero .button:hover,
 .hero .button:focus {
