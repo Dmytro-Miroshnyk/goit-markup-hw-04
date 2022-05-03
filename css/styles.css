@@ -481,16 +481,19 @@ span.secondary {
   fill: var(--icons-color);
 }
 .team-icon:hover,
-.team-icon:focus {
+.team-icon:focus,
+.team-icon:active {
   background-color: var(--accent-color);
   fill: var(--main-background-color);
   cursor: pointer;
 }
 .team-icon svg:hover,
-.team-icon svg:focus {
+.team-icon svg:focus,
+.team-icon svg:active {
   color: var(--main-background-color);
   cursor: pointer;
 }
+
 .customer-icons {
   display: flex;
   margin: 0px;
@@ -510,7 +513,8 @@ span.secondary {
   border-radius: 4px;
 }
 .customer-icon:focus,
-.customer-icon:hover {
+.customer-icon:hover,
+.customer-icon:active {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
   cursor: pointer;
@@ -556,7 +560,8 @@ span.secondary {
   padding-top: 12px;
 }
 .footer-icon:hover,
-.footer-icon:focus {
+.footer-icon:focus,
+.footer-icon:active {
   background-color: var(--accent-color);
   cursor: pointer;
 }
@@ -564,6 +569,7 @@ span.secondary {
   fill: currentColor;
 }
 .mail-icon:hover,
-.mail-icon:focus {
+.mail-icon:focus,
+.mail-icon:active {
   fill: var(--accent-color);
 }
